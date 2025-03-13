@@ -1,0 +1,48 @@
+@import 'scss/functions';
+@import "scss/variables";
+
+  $new-font-sizes: (
+    7: $font-size-base * 0.85,
+    8: $font-size-base * 0.75,
+    9: $font-size-base * 0.60,
+    10: $font-size-base * 0.50,
+  ) ;
+
+  $font-sizes: map-merge($font-sizes, $new-font-sizes); 
+
+$new-border-widths: (
+    6: 6px,
+    7: 7px,
+    8: 8px,
+    9: 9px,
+    10: 10px,
+    ) ; 
+
+    $border-widths: map-merge($border-widths, $new-border-widths);
+
+    $input-btn-padding-x: 2.5rem;
+    $input-btn-padding-y: 0.75rem;
+    
+    $btn-padding-x: $input-btn-padding-x;
+    $btn-padding-y: $input-btn-padding-y;
+
+    $new-grid-gutter-width: 0.5rem;
+
+   $grid-gutter-width: $new-grid-gutter-width;
+
+    $new-danger: #ff0077; // il mio nuovo primary
+    $new-info: #00ffea;
+    $new-light: #f3eeff;
+    
+    $new-theme-colors: (
+      'danger': $new-danger,
+      'info': $new-info,
+      'light': $new-light,
+    );
+    
+   
+    $theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+
+
+@import 'scss/bootstrap.scss';
