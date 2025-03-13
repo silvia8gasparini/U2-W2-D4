@@ -30,19 +30,30 @@ $new-border-widths: (
 
    $grid-gutter-width: $new-grid-gutter-width;
 
-    $new-danger: #ff0077; // il mio nuovo primary
+    $new-danger: #ff0077; 
     $new-info: #00ffea;
     $new-light: #f3eeff;
+    $epicode1:#5726c3;
+    $epicode2:#8625a5;
+    $epicode3:#cb2376;
     
     $new-theme-colors: (
       'danger': $new-danger,
       'info': $new-info,
       'light': $new-light,
+      'epicode1':$epicode1,
+      'epicode2':$epicode2,
+      'epicode3':$epicode3,
     );
     
-   
     $theme-colors: map-merge($theme-colors, $new-theme-colors);
 
+    $badge-border-radius: 2em;
+    $btn-border-radius: 2rem;
+    $input-border-radius: 2rem;
 
+    $card-color: $new-info;
+    $card-bg:$dark;
+    $card-border-radius: 2rem;
 
 @import 'scss/bootstrap.scss';
